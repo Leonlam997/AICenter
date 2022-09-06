@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="18dp"
+        android:clickable="true"
+        android:drawablePadding="5dp"
+        android:focusable="true"
+        android:textColor="@color/text_button_style"
+        android:textSize="@dimen/common_text_size"
+        app:drawableStartCompat="@drawable/button_back_style" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/title_text_size" />
+
+    <TextView
+        android:id="@+id/tv_save_exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="20dp"
+        android:clickable="true"
+        android:drawablePadding="5dp"
+        android:focusable="true"
+        android:text="@string/text_save_exit"
+        android:textColor="@color/text_button_style"
+        android:textSize="@dimen/add_device_text_size"
+        android:visibility="invisible"
+        app:drawableStartCompat="@drawable/button_save_style" />
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_title"
+        android:layout_marginTop="15dp"
+        android:background="@color/list_line_color" />
+</RelativeLayout>

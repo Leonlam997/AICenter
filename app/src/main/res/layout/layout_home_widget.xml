@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <GridView
+        android:id="@+id/gv_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@id/rl_music"
+        android:numColumns="4" />
+
+    <LinearLayout
+        android:id="@+id/btn_weather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/text_voice"
+            android:src="@drawable/button_enable_voice_style" />
+
+        <ImageView
+            android:id="@+id/iv_wifi"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_wifi0"/>
+
+        <ImageView
+            android:id="@+id/iv_weather"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/tv_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/common_text_size" />
+
+        <TextView
+            android:id="@+id/tv_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/common_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/time_text_size" />
+
+        <TextClock
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="3dp"
+            android:format12Hour="EEEE\nyyyy/MM/dd"
+            android:format24Hour="EEEE\nyyyy/MM/dd"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/date_text_size" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_music"
+        android:layout_width="330dp"
+        android:layout_height="335dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/common_background">
+
+        <ImageButton
+            android:id="@+id/btn_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/device_background"
+            android:src="@mipmap/mode_loop" />
+
+        <ImageButton
+            android:id="@+id/btn_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_total_time"
+            android:layout_centerHorizontal="true"
+            android:background="@color/device_background"
+            android:src="@drawable/button_play_style" />
+
+        <ImageButton
+            android:id="@+id/btn_prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_total_time"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@id/btn_pause"
+            android:background="@color/device_background"
+            android:src="@drawable/button_prev_style" />
+
+        <ImageButton
+            android:id="@+id/btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_total_time"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/btn_pause"
+            android:background="@color/device_background"
+            android:src="@drawable/button_next_style" />
+
+        <ImageButton
+            android:id="@+id/btn_decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_pause"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:background="@color/device_background"
+            android:src="@drawable/button_decrease_style" />
+
+        <ImageButton
+            android:id="@+id/btn_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_pause"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="22dp"
+            android:background="@color/device_background"
+            android:src="@drawable/button_increase_style" />
+
+        <ImageView
+            android:id="@+id/iv_album"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/album" />
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/album_frame" />
+
+        <LinearLayout
+            android:id="@+id/ll_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_album"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <com.leon.aicenter.component.MarqueeTextView
+                android:id="@+id/tv_song_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="@color/common_text_color"
+                android:textSize="@dimen/music_title_text_size" />
+
+            <com.leon.aicenter.component.MarqueeTextView
+                android:id="@+id/tv_singer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="@color/text_subtitle_color"
+                android:textSize="@dimen/common_text_size" />
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_song"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/ll_song"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:progressDrawable="@drawable/progress_song" />
+
+        <SeekBar
+            android:id="@+id/sb_volume"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/btn_pause"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="50dp"
+            android:max="10"
+            android:progressDrawable="@drawable/progress_song"
+            android:thumb="@color/progress_color" />
+
+        <TextView
+            android:id="@+id/tv_elapse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pb_song"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/text_subtitle_color"
+            android:textSize="@dimen/music_time_text_size" />
+
+        <TextView
+            android:id="@+id/tv_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pb_song"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/text_subtitle_color"
+            android:textSize="@dimen/music_time_text_size" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/device_on_background"
+        android:textSize="@dimen/music_time_text_size"
+        tools:ignore="RelativeOverlap" />
+
+    <TextView
+        android:id="@+id/tv_hints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:drawablePadding="10dp"
+        android:gravity="center"
+        android:text="@string/text_speech_hints"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/common_text_size"
+        app:drawableStartCompat="@mipmap/ic_speech" />
+</RelativeLayout>

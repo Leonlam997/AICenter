@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <GridLayout
+        android:id="@+id/gl_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:columnCount="2">
+
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/common_button_style"
+            android:text="@string/button_continue"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/common_button_style"
+            android:text="@string/button_finished"
+            android:textColor="@color/common_text_color"
+            android:textSize="@dimen/button_text_size" />
+    </GridLayout>
+
+    <ListView
+        android:id="@+id/lv_switches"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/gl_button"
+        android:layout_below="@id/tv_detected_device"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:divider="@android:color/transparent" />
+
+    <TextView
+        android:id="@+id/tv_detected_device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/text_set_props"
+        android:textColor="@color/common_text_color"
+        android:textSize="@dimen/title_text_size" />
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="music_time_text_size">12sp</dimen>
+    <dimen name="music_title_text_size">20sp</dimen>
+    <dimen name="common_text_size">16sp</dimen>
+    <dimen name="which_text_size">14sp</dimen>
+    <dimen name="device_name_text_size">20sp</dimen>
+    <dimen name="title_text_size">22sp</dimen>
+    <dimen name="room_name_text_size">18sp</dimen>
+    <dimen name="add_device_text_size">18sp</dimen>
+    <dimen name="time_text_size">55sp</dimen>
+    <dimen name="date_text_size">18sp</dimen>
+    <dimen name="button_width">130dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="dialog_text_size">18sp</dimen>
+    <dimen name="text_search_progress">26sp</dimen>
+    <dimen name="scene_type_text_size">12sp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+    <dimen name="text_temperature">70sp</dimen>
+</resources>

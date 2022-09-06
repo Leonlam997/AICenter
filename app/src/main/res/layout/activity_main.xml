@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@mipmap/bg_navigator"
+        android:columnCount="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_rowWeight="1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_home_style"
+            android:contentDescription="@string/text_home" />
+
+        <ImageButton
+            android:id="@+id/btn_device"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/button_device_style"
+            android:contentDescription="@string/text_device" />
+
+        <ImageButton
+            android:id="@+id/btn_scene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/button_scene_style"
+            android:contentDescription="@string/text_scene" />
+
+        <ImageButton
+            android:id="@+id/btn_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/button_room_style"
+            android:contentDescription="@string/text_room" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/layout_home"
+            layout="@layout/layout_home" />
+
+        <include
+            android:id="@+id/layout_devices"
+            layout="@layout/layout_all_devices" />
+
+        <include
+            android:id="@+id/layout_scenes"
+            layout="@layout/layout_all_scenes" />
+
+        <include
+            android:id="@+id/layout_room"
+            layout="@layout/layout_all_rooms" />
+    </LinearLayout>
+</LinearLayout>

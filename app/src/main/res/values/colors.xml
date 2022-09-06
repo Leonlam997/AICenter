@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#15181d</color>
+    <color name="device_background">#21252d</color>
+    <color name="device_background_pressed">#76767E</color>
+    <color name="button_color">#4BBDC6</color>
+    <color name="button_pressed_color">#2F7479</color>
+    <color name="button_disabled_color">#ACAFAF</color>
+    <color name="device_on_background">#3d4757</color>
+    <color name="common_text_color">#FFFFFF</color>
+    <color name="text_subtitle_color">#A0FFFFFF</color>
+    <color name="text_off_color">#80FFFFFF</color>
+    <color name="tab_text_color">#FFFFFF</color>
+    <color name="tab_unselect_text_color">#88FFFFFF</color>
+    <color name="progress_color">#FFFFFF</color>
+    <color name="progress_background_color">#40FFFFFF</color>
+    <color name="list_line_color">#4B4F57</color>
+    <color name="detected_device_name_color">#3de584</color>
+    <color name="select_bar_color">#4BBDC6</color>
+    <color name="warning_dialog_background">#21252d</color>
+    <color name="warning_dialog_button">#21252d</color>
+    <color name="warning_dialog_button_pressed">#000000</color>
+    <color name="search_progress_color">#4BBDC6</color>
+    <color name="toast_bg_color">#BB020202</color>
+    <color name="scene_type_bg_color">#4021252d</color>
+    <color name="highlight_bg_color">#3d4757</color>
+    <color name="list_selector_color">#50FFFFFF</color>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/layout_title_bar" />
+
+    <include
+        android:id="@+id/layout_list"
+        layout="@layout/layout_scene_list" />
+
+    <include
+        android:id="@+id/layout_modify"
+        layout="@layout/layout_modify_scene" />
+
+    <include
+        android:id="@+id/layout_background"
+        layout="@layout/layout_select_background" />
+
+    <include
+        android:id="@+id/layout_select"
+        layout="@layout/layout_select_device" />
+</LinearLayout>
